@@ -1,0 +1,62 @@
+/* Styling for the filter card container */
+.filter-card {
+  width: 500px; /* Sets card width */
+  height: 80px; /* Sets card height */
+  background-color: rgb(255, 251, 251); /* Light background color */
+  display: flex; /* Sets layout to flex */
+  flex-direction: column; /* Stacks elements vertically */
+  justify-content: space-between; /* Distributes space between child elements */
+  align-items: center; /* Centers elements horizontally */
+  border-radius: 12px; /* Smooth rounded corners */
+  padding-bottom: 44px; /* Bottom padding for spacing */
+  margin-bottom: 48px; /* Space below the card */
+  border: 1px solid var(--primary-color); /* Border with primary color */
+}
+
+/* Styling for the wrapper section */
+.wrapper {
+  width: 500px; /* Width of wrapper */
+  height: 100px; /* Height of wrapper */
+  padding: 24px; /* Inner padding for spacing */
+  display: flex; /* Sets layout to flex */
+  background-color: rgb(78, 170, 170); /* Wrapper background color */
+  justify-content: space-between; /* Distributes space between items */
+  align-items: center; /* Centers items horizontally */
+}
+
+/* Styling for the form inside the filter card */
+.filter-card form {
+  display: flex; /* Flex layout for form elements */
+  justify-content: space-between; /* Space between form items */
+  align-items: center; /* Center aligns items */
+}
+
+/* Styling for the month label */
+.month label {
+  font-size: 23px !important; /* Font size for label text */
+  color: white; /* White text color */
+}
+
+/* Styling for the month dropdown */
+.month select {
+  font-size: 23px !important; /* Font size for dropdown */
+}
+
+/* Styling for the filter card button */
+.filter-card button {
+  padding: 12px 28px; /* Padding around button text */
+  border-style: none; /* Removes border */
+  border-radius: 6px; /* Rounded corners */
+  background-color: var(--primary-color); /* Background using primary color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+.filter-card button:hover {
+  background-color: rgb(9, 140, 16); /* Changes color on hover */
+}
+
+/* Styling for date label */
+.date label {
+  color: white; /* Sets label text color to white */
+}

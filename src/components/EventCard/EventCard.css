@@ -1,0 +1,126 @@
+/* Importing a Google Font for global typography */
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;900&display=swap");
+
+/* Root variables for colors and font styles */
+:root {
+  font-family: "Lexend", Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* Default font family */
+  --primary-color: #ffffff; /* Primary color variable for easy modification */
+  --bg-color: rgb(177, 229, 218); /* Background color variable */
+  --white: #ffffff; /* White color variable */
+}
+
+/* Link styling */
+a {
+  text-decoration: line-through !important; /* Strikes through all links */
+}
+
+/* Universal styling */
+* {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's width/height */
+  font-family: "Lexend", sans-serif; /* Sets global font */
+  color: rgb(25, 31, 25); /* Default text color */
+}
+
+/* Card Container */
+.card-container {
+  display: grid; /* Sets layout to grid */
+  gap: 20px; /* Space between grid items (cards) */
+  padding: 20px; /* Padding around the entire grid container */
+}
+
+.card {
+  background: linear-gradient(45deg, rgb(48, 85, 85), rgb(34, 155, 155)); /* Gradient background */
+  border-radius: 8px; /* Smooth, rounded corners */
+  padding: 14px; /* Padding inside each card */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow to create depth */
+}
+
+/* Card Hover Effects */
+.card:hover {
+  transform: scale(1.05) translateY(5px); /* Grows and lifts card slightly on hover */
+  box-shadow: 0 10px 20px rgba(150, 133, 40, 0.856); /* Stronger shadow on hover for emphasis */
+  background-color: #0c0c38; /* Changes background color on hover */
+}
+
+.card:hover .card-img-wrapper img {
+  transform: scale(2.4); /* Enlarges image within the wrapper on hover */
+}
+
+.card:hover .card-content {
+  animation: bounce 1s ease-in-out; /* Adds bounce effect to card content */
+}
+
+/* Image Styling */
+.card .card-img-wrapper {
+  width: 100%; /* Ensures image wrapper takes full width */
+  overflow: hidden; /* Prevents image overflow beyond wrapper */
+  border-radius: 28px; /* Smooth, rounded corners for image */
+  transition: transform 0.9s ease; /* Smooth transition for scaling */
+}
+
+.card img {
+  width: 100%; /* Ensures image width matches its container */
+  height: auto; /* Maintains aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition on scaling */
+}
+
+/* Content Styling */
+.card .card-content {
+  display: flex; /* Sets layout to flex for alignment */
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers items horizontally */
+  padding: 24px; /* Padding inside content */
+  text-align: center; /* Centers text */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.card h3 {
+  font-size: 1em; /* Font size */
+  text-transform: uppercase; /* Converts text to uppercase */
+  color: #ffffff; /* Text color */
+  font-weight: 400; /* Font weight */
+  margin: 0; /* Removes default margin */
+  padding-bottom: 8px; /* Adds space below heading */
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.card p {
+  font-size: 1em; /* Font size */
+  color: #f0f0f0; /* Text color */
+  margin: 8px 0; /* Vertical spacing around paragraph */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.card p span {
+  font-size: 1.2em; /* Slightly larger font for emphasis */
+  color: #e0e0e0; /* Text color */
+}
+
+/* Animation Keyframes */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); /* Starting and returning to original position */
+  }
+  40% {
+    transform: translateY(-15px); /* Moves content up */
+  }
+  60% {
+    transform: translateY(-10px); /* Slight bounce effect */
+  }
+}
+
+/* Responsive Design: Larger Screens */
+@media (min-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+  }
+}
+
+/* Responsive Design: Smaller Screens */
+@media (max-width: 640px) {
+  .card-container {
+    grid-template-columns: 1fr; /* One-column layout for smaller screens */
+  }
+}

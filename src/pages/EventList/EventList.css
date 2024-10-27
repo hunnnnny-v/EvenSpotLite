@@ -1,0 +1,34 @@
+/* Event List Wrapper Styles */
+
+/* Main container for the event list section */
+.event-list-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: var(
+    --bg-color
+  ); /* Uses a CSS variable for background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid layout for the event list */
+.event-list {
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for desktop view */
+  justify-content: center;
+  align-items: center;
+  gap: 24px; /* Space between grid items */
+  margin-top: 140px;
+  margin-bottom: 60px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .event-list {
+    grid-template-columns: 1fr; /* Switches to a single column layout */
+    width: 500px; /* Adjusts width for mobile view */
+  }
+}

@@ -1,0 +1,106 @@
+/* Main Container */
+.event-details-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(177, 229, 218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Card Style */
+.event-card {
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 800px;
+  transition: transform 0.3s ease;
+}
+
+/* Image Styling with Hover Effects */
+.event-card img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.event-card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Content Styling */
+.event-details-content {
+  margin-top: 30px;
+  animation: slideIn 1s ease-out;
+}
+
+/* Animations for Modal Transitions */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Title and Description Styling */
+.event-details-content h3 {
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.small-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.date, .location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #1da1f2;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.description-heading {
+  font-size: 22px;
+  font-weight: 500;
+  color: #1da1f2;
+  margin-top: 20px;
+}
+
+.description-heading-para {
+  font-size: 18px;
+  color: #333;
+}

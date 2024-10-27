@@ -1,0 +1,51 @@
+/* Event List Styles */
+
+/* Container for the list of events */
+.event-list-container {
+  padding: 20px;
+  background-color: rgb(177, 229, 218);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Search section styling */
+.event-search {
+  margin-top: 60px;
+  text-align: center; /* Center-aligns the text */
+}
+
+.event-search p {
+  font-size: 18px;
+  color: #333; /* Darker text color for readability */
+}
+
+/* Wrapper for event cards */
+.event-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive card layout */
+  gap: 20px; /* Spacing between cards */
+  animation: fadeIn 0.5s ease-in; /* Fade-in animation for cards */
+}
+
+/* Fade-in animation for cards */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start slightly below */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Hover effect for each card in the grid */
+.event-cards-wrapper > * {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.event-cards-wrapper > *:hover {
+  transform: translateY(-5px); /* Slight upward movement */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover effect */
+}
