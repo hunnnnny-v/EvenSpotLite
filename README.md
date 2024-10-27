@@ -1,6 +1,26 @@
-HERE ARE THE SETUP REQUIREMENTS FOR THE PROJECT:
-A) First clone the repository in terminal of any IDE of your choice to your machine.
-B) Once cloned , run npm i command on the terminal.
-C) In order to ensure smooth routing run npm install react-router-dom in the terminal too.
-D) At the last to start the application run : npm run dev command on the terminal.
-E) Once runned click on the https://localhost link provided it will direct you to the site.
+---Project Setup---
+
+To set up this project on your local machine, follow these steps:
+
+1) Clone the Repository:
+Clone the repository to your local machine by running:
+git clone my_repo_url
+
+
+2) Install Dependencies:
+Navigate into the project directory and install the required dependencies:
+npm install
+
+
+3) Install React Router:
+To ensure smooth routing, install react-router-dom:
+npm install react-router-dom
+
+4) Start the Application:
+Launch the application by running:
+npm run dev
+
+
+5) Access the Site:
+Once the application is running, click on the provided https://localhost link in the terminal to view the site in your browser.
+
