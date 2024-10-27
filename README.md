@@ -4,7 +4,7 @@ To set up this project on your local machine, follow these steps:
 
 1) Clone the Repository:
 Clone the repository to your local machine by running:
-git clone my_repo_url
+git clone https://github.com/hunnnnny-v/Hunny_Vaglay_EvenSpotLite
 
 
 2) Install Dependencies:
