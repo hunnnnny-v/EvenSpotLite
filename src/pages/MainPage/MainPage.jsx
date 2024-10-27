@@ -12,8 +12,8 @@ const MainPage = () => {
 
         {/* // Main title of the page */}
         <p className="hero-subtitle">
-          Discover and explore events that make every moment memorable! //
-          Subtitle explaining the purpose of the website
+          Discover and explore events that make every moment memorable! 
+          {/* Subtitle explaining the purpose of the website */}
         </p>
         <Link to="/event-list">
           {/* // Link to the event list page */}
